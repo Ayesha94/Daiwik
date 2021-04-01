@@ -17,7 +17,9 @@ function setup(){
 
     
     ground = new Ground(600,height,1200,20)
-
+    
+    //create a new platform for the game
+    platform=new Ground(200, 300, 400, 200)
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
     pig1 = new Pig(810, 350);
@@ -59,4 +61,6 @@ function draw(){
     log5.display();
 
     bird.display();
+
+    platform.display();
 }
